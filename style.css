@@ -22,7 +22,7 @@ p, label {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banger.jpg");
 
   /* Set a specific height */
-  height: 85%;
+  height: 90%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -39,6 +39,7 @@ p, label {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  width: auto;
 }
 
 .hero-text p{
