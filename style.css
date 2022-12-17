@@ -11,8 +11,29 @@
 
   p {
       color: #FFFFFF;
+      font-size: 20px;
+  }
+
+  li {
+    color: #FFFFFF;
+    font-size: 20px;
   }
 /* End basic junk */
+
+/* Rules concerning div styles */
+  .maincontent {
+    margin-left:auto; 
+    margin-right:auto; 
+    width: 80%; 
+    max-width: 1536px; /* Portioned for a 1080p screen */
+    text-align: justify;
+  }
+
+  #supercenter {
+    display:flex;
+    justify-content:center;
+  }
+/* End div styles */
 
 
 /* Rules concerning hero image */
@@ -65,6 +86,7 @@
   nav li {
     flex: 1;
     text-align: center;
+    font-size: 16px;
   }
 
   nav a {
