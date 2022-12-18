@@ -43,13 +43,11 @@
   }
 /* End div styles */
 
-
 /* Rules concerning hero image */
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/unionwithtericastillo.webp");
-    height: 80%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("images/unionwithtericastillo.webp"); /* Darkens image for legibility */
+    height: 85%;
+    background-position: 70% 60%;
     background-size: cover;
     position: relative;
   }
@@ -57,20 +55,10 @@
   .hero-text {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    width: auto;
-  }
-
-  .hero-text p{
-      font-size: 20px;
-  }
-
-  .hero-text h1{
-    font-size: 60px;
-    margin: 0;
+    width: 80%;
   }
 /* End rules concerning hero image */
 
@@ -155,8 +143,7 @@
   }
 
   #action{
-    width:100%;
-    min-width:350px;
+    width:95%;
   }
 }
 
@@ -179,6 +166,6 @@
   #action{
     width:80%;
     min-width:350px;
-    max-width:85px;
+    max-width:600px;
   }  
 }
