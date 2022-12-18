@@ -3,9 +3,10 @@
       background-color: #231F20;
       font-family: 'Barlow', sans-serif;
       height:100%;
+      margin:0;
   }
 
-  h1, b {
+  h1, b, h2 {
       color: #60CFC7;
   }
 
@@ -24,21 +25,28 @@
   .maincontent {
     margin-left:auto; 
     margin-right:auto; 
-    width: 80%; 
-    max-width: 1536px; /* Portioned for a 1080p screen */
+    width: 82%; 
+    max-width: 1400px;
+    min-width: 320px;
     text-align: justify;
+    line-height:1.4;
   }
 
   #supercenter {
     display:flex;
     justify-content:center;
   }
+
+  .maincontent a {
+    text-decoration: none;
+    color: #60CFC7;
+  }
 /* End div styles */
 
 
 /* Rules concerning hero image */
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banger.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/unionwithtericastillo.webp");
     height: 80%;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -91,7 +99,7 @@
 
   nav a {
     display: block;
-    padding: 12px 16px;
+    padding: 12px 6px;
     color: white;
     text-decoration: none;
     transition: 0.3s;
@@ -101,3 +109,76 @@
     background-color: #60CFC7;
   }
 /* End rules concerning nav bar */
+
+/* Rules concerning footer */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #111010;
+  padding: 20px 0 30px 0;
+  margin: 30px 0 0 0;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #60CFC7;
+}
+
+.column a, .column p {
+  text-align: justify; 
+  font-size: 18px;
+}
+
+/* Less than or equal to 700Px */
+@media screen and (max-width: 700px) {
+  .footer {
+    display: block;
+    
+  }
+  .column {
+    width: 70%;
+    background-color: #111010;
+    padding: 0 15%;
+  }
+
+  #action{
+    width:100%;
+    min-width:350px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    display: inline-flex;
+  }
+  #one{
+    margin-left: auto;
+  }
+  #three{
+    margin-right: auto;
+  }
+  .column {
+    width:25%;
+    background-color: #111010;
+    margin: 10px;
+    max-width: 360px;
+  }
+  #action{
+    width:80%;
+    min-width:350px;
+    max-width:85px;
+  }  
+}
