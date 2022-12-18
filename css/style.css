@@ -93,11 +93,11 @@ nav a:hover, nav p:hover, .dropdown-content a:hover{
 }
 
 .footer {
-  background-color: #101010;
-  padding: 20px 0;
-  margin-top: 30px;
-  text-align: center;
-  width:100%;
+background-color: #101010;
+padding: 20px 0;
+margin-top: 30px;
+text-align: center;
+width:100%;
 }
 
 .footer a{
@@ -106,7 +106,6 @@ nav a:hover, nav p:hover, .dropdown-content a:hover{
 }
 
 .column {
-  width: 360px;
   background-color: #111010;
   padding: 0 15%;
 }
