@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAY S&iacute; Union</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SAY Si Union links and resources for organization of arts nonprofit worker's unionization"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/emailblitz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/googlefonts.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!--<li style="text-align: left;";><img src="images/upologo-black.png" width="34" height="34" style="padding:5px 0 0 10px;"/> </li>-->
+            <li><a href="https://saysiunion.org/">Home</a></li>
+            <li><a href="https://saysiunion.org/articles">Articles</a></li>
+            <li><a href="https://saysiunion.org/emailblitz">Email Blitz</a></li>
+
+            <li><div class="dropdown">
+                <p class="dropbtn">Socials</p>
+                <div class="dropdown-content">
+                    <a href="https://twitter.com/the_saysi_union">Twitter</a>
+                    <a href="https://instagram.com/the_saysi_union">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=100087683375336&mibextid=LQQJ4d">Facebook</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="maincontent" style="margin-top:60px;">
+        <h1 style="text-align: center;">
+            PARTICIPATE IN THE SAY S&iacute; UNION'S EMAIL BLITZ!
+        </h1>
+        <p>
+            This Tuesday, December 20th through Thursday, December 22nd, the SAY S&iacute; Union 
+            is hosting an email blitz to show public support for the recognition of our union and our 
+            demands! You can help by contacting members of SAY S&iacute;'s board of directors,
+            executive committee, and politicans. Contact information, scripts, and instructions can
+            be found below!
+        </p>
+    </div>
+    <div id="contactcontainers">
+        <div class="contactinfo">
+            <h1 style="text-align: center;" id="contacttheboard">
+                CONTACT THE BOARD!
+            </h1>
+            <P>Both the president of the SAY S&iacute; board, Jason Moran, and the SAY S&iacute; president and
+                Director of Innovation, Jon Hinojosa, can be reached via email. Their emails are <a href="mailto:jsn.moran10@gmail.com">jsnmoran10@gmail.com</a> and <a href="mailto:jon@saysi.org">jon@saysi.org</a>.
+            </P>
+            
+            <p>You can write your own email supporting the recognition of the entirety of the SAY S&iacute; Union,
+                or you can utilize the script below:
+            </p>
+    
+             <!-- The text field -->
+            <textarea type="text" id="boardScript">To Jason Moran and Jon Hinojosa,
+
+My name is _______, (add personal anecdote about relationship to SAY Sí)
+
+As a (parent/alumni/community member), I am shocked and disappointed in the actions and behavior of the board of directors in response to the SAY Sí staff’s effort to unionize. The refusal to provide clarification on the possible use of SAY Sí funding to fight against the rights of the staff, hiring a PR firm to try to spin bad decision making, as well as making use of the union busting law firm Ogletree-Deakins, is disturbing and goes against everything the organization stands for. SAY Sí is an organization that is supposed to be committed to Equity, Leadership and Community, but the actions of the Board and the neutral stance of the President of Innovation Jon Hinojosa speak to the opposite and do not serve the staff, students, or community-at-large. The SAY Sí staff are the individuals who carry out the mission of the organization and embody its core values, and every staff member deserves to have their voice heard. 
+
+I call on the Board of Directors to voluntarily recognize the entirety of the SAY Sí Union immediately, begin contract negotiation in good faith, cut ties with Ogletree-Deakins, disclose if funding has been used to fight against the organization's values, and apologize to the staff and community .
+
+With hopes for the future of SAY Sí,
+Insert Name Here</textarea>
+    
+            <!-- The button used to copy the text -->
+            <button style="margin-left:auto;margin-right:auto;" onclick="copyBoard()">Copy script to your clipboard</button> 
+            
+        </div>
+        <div class="contactinfo">
+            <h1 style="text-align: center;" id="contactcitycouncil">
+                CONTACT YOUR COUNCILMEMBER!
+            </h1>
+            <P>If you aren't sure who your representative is or how to contact them, <a href="https://www.sanantonio.gov/Council/Find-My-Council-Member">click here to use the city's "Find My Council Member" tool.</a> We've recieved letters of support from Jalen McKee-Rodriguez of District 2, Phyllis Viagran of District 3, and Teri Castillo of District 5.
+            </P>
+            <p>You can write your own message supporting SAY S&iacute; Union,
+                or you can utilize the script below:
+            </p>
+    
+             <!-- The text field -->
+        <textarea type="text" id="councilScript">Dear ______________ (elected representative),
+
+My name is _________ and I am contacting you concerned about how the organization SAY Sí is using municipal funding. As you might be aware, the staff of SAY Sí is in the process of unionizing and has been met with opposition from the board who has hired both a PR firm to help their image and the law firm Ogletree Deakins to represent them most recently through the NLRB hearing where the board contested the inclusion of several staff members. The board has refused to disclose how they are funding these anti-union efforts, and as a tax paying citizen I am concerned that my money is being used to fight unions and even employ union busting tactics. I would ask that you as an elected representative inquire further into how the board of SAY Sí is using municipal funding in whatever capacity that you have.
+
+Thank you, 
+Insert Name Here</textarea>
+    
+            <!-- The button used to copy the text -->
+            <button style="margin-left:auto;margin-right:auto;" onclick="copyCouncil()">Copy script to your clipboard</button> 
+    
+        </div>
+    
+    </div>
+
+
+
+        <script>
+            function copyBoard() {
+                // Get the text field
+                var copyText = document.getElementById("boardScript");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+
+                // Alert the copied text
+                alert("Script for board email copied! Paste it into your email client and mail it out!");
+            } 
+
+            function copyCouncil() {
+                // Get the text field
+                var copyText = document.getElementById("councilScript");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(copyText.value);
+
+                // Alert the copied text
+                alert("Script for city council email copied! Paste it into your email client and mail it out!");
+            } 
+        </script>
+
+    </div><!-- Ends main content -->
+    <div class="footer">
+        <div class="column" style="margin-left:auto;margin-right:auto; text-align:center;">
+            <img src="images/upologo-transparent-50px.png" width=50px alt="Logo for UPO SAY Si">
+            <p> Copyright &copy; 2022 SAY S&iacute; Union</p>
+            <p>For any questions, comments, or concerns, please email us at <a href="mailto:saysiunion@gmail.com">saysiunion@gmail.com</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

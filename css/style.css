@@ -27,7 +27,7 @@ a {
 .maincontent {
     margin: 43px auto 0 auto;
     width: 82%; 
-    max-width: 1400px;
+    max-width: 1150px;
     min-width: 320px;
     text-align: justify;
     line-height:1.4;
@@ -77,7 +77,7 @@ nav a:hover, nav p:hover, .dropdown-content a:hover{
   position: absolute;
   background-color: #101010;
   z-index: 1;
-  width: 33%;
+  width: 25%;
   text-align:center;
 }
 
@@ -108,4 +108,21 @@ width:100%;
 .column {
   background-color: #111010;
   padding: 0 15%;
+}
+
+@media screen and (min-width: 735px) {
+  .act{
+    width:80%;
+    max-width:600px;
+    margin: 10px auto;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .act{
+    width:95%;
+    margin: 10px auto;
+    display: flex;
+  }
 }

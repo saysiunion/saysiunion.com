@@ -1,0 +1,54 @@
+textarea, button{
+    font-family: barlow;
+    font-size: 16px;
+    color: white;
+    background-color: #101010;
+    border: transparent;
+    transition: 0.3s;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+textarea {
+    width:100%;
+    height: 310px;
+}
+
+button {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+}
+
+button:hover{
+    background-color: #427774;
+}
+.contactinfo {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 1440px) {
+    #contactcontainers{
+        display:flex;
+        margin: 0 5%;
+    }
+    .contactinfo {
+        width: 40%;
+    }
+    #boardScript{
+        height: 336px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    #contactcontainers{
+        display:block;
+    }
+    .contactinfo {
+        width: 80%;
+        margin: auto;
+    }
+}

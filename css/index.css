@@ -21,15 +21,3 @@
     width: 80%;
 }
 
-@media screen and (max-width: 735px) {
-    #action{
-      width:95%;
-    }
-}
-  
-@media screen and (min-width: 735px) {
-    #action{
-      width:80%;
-      max-width:600px;
-    }
-}
