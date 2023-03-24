@@ -45,3 +45,11 @@
     
 
 }
+
+.presskit{
+  text-decoration: dotted underline;
+}
+
+.presskit:hover{
+  font-weight: bold;
+}
