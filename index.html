@@ -70,9 +70,13 @@
     <div class="footer">
         <div class="column" style="margin-left:auto;margin-right:auto; text-align:center;">
             <img src="images/upologo-transparent-50px.png" width=50px alt="Logo for UPO SAY Si">
-            <p> Copyright &copy; 2023 SAY S&iacute; Union</p>
+            <p> Copyright &copy; <span id="currentYear"></span> SAY S&iacute; Union</p>
             <p>For any questions, comments, or concerns, please email us at <a href="mailto:saysiunion@gmail.com">saysiunion@gmail.com</a>.</p>
         </div>
     </div>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+      
 </body>
 </html>
